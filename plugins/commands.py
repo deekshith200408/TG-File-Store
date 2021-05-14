@@ -18,7 +18,7 @@ async def start(c, m, cb=False):
     owner_username = owner.username if owner.username else 'Ns_bot_updates'
 
     # start text
-    text = f"""🤓🤹ʜɪ ʜᴇʟᴏo, {m.from_user.mention(style='md')}
+    text = f"""🤓🤹ʜɪ ʜᴇʟᴏo {m.from_user.mention(style='md')}
 
 💡 ** ɪ ᴀᴍ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ**
 
