@@ -36,12 +36,12 @@ Yᴏᴜ ᴄᴀɴ sᴛᴏʀᴇ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ Mᴇᴅɪᴀ ғᴏ�
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('🤹𝐜𝐫𝐞𝐚𝐭𝐞𝐫/𝐦𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐫🤴', url=f"https://t.me/{owner_username}")],
-            [InlineKeyboardButton('Help 💡', callback_data="help")
+            InlineKeyboardButton('🤹 𝙲𝚁𝙴𝙰𝚃𝙴𝚁 🤴', url=f"https://t.me/{owner_username}")],
+            [InlineKeyboardButton('𝙷𝙴𝙻𝙿 💡', callback_data="help")
         ,
         
-            InlineKeyboardButton('About 📕', callback_data="about")
-        ],[InlineKeyboardButton('🎪𝐉𝐎𝐈𝐍 𝐎𝐔𝐑𝐒 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒🎪', url=f"https://t.me/UNI_MOVIES_BOX")
+            InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 📕', callback_data="about")
+        ],[InlineKeyboardButton('🎪𝐉𝐎𝐈𝐍 𝐎𝐔𝐑𝐒 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒🎪', url=f"https://t.me/UNI_MOVIES_BOX")]
     ]
 
     # when button home is pressed
@@ -63,7 +63,7 @@ Yᴏᴜ ᴄᴀɴ sᴛᴏʀᴇ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ Mᴇᴅɪᴀ ғᴏ�
 
         if chat_id.startswith('-100'): #if file from channel
             channel = await c.get_chat(int(chat_id))
-            caption += "**--𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n"
+            caption += "**-👾𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n"
             caption += f"__🎪 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙽𝙰𝙼𝙴:__ `{channel.title}`\n\n"
             caption += f"__🕵️ 𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴:__ @{channel.username}\n\n" if channel.username else ""
             caption += f"__🆔 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙸𝙳:__ `{channel.id}`\n\n"
@@ -72,7 +72,7 @@ Yᴏᴜ ᴄᴀɴ sᴛᴏʀᴇ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ Mᴇᴅɪᴀ ғᴏ�
 
         else: #if file not from channel
             user = await c.get_users(int(chat_id))
-            caption += "\n\n\n**--𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n"
+            caption += "\n\n\n**-👾𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n"
             caption += f"__🤹 𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴:__ `{user.first_name}`\n\n"
             caption += f"__🙄 𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴:__ `{user.last_name}`\n\n" if user.last_name else ""
             caption += f"__♨️ 𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴:__ @{user.username}\n\n" if user.username else ""
