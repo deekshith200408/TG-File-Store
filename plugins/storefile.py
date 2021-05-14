@@ -17,22 +17,22 @@ async def storefile(c, m):
        media = m.audio
 
     # text
-    text = "--**🗃️ File Details:**--\n\n\n"
-    text += f"📂 __File Name:__ `{media.file_name}`\n\n"
-    text += f"💽 __Mime Type:__ `{media.mime_type}`\n\n"
-    text += f"📊 __File Size:__ `{humanbytes(media.file_size)}`\n\n"
+    text = "--**🗃️ 𝐅𝐈𝐋𝐄 𝐃𝐈𝐓𝐀𝐈𝐋𝐒:**--\n\n\n"
+    text += f"📂 __𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴:__ `{media.file_name}`\n\n"
+    text += f"💽 __𝙼𝙸𝙼𝙴 𝚃𝚈𝙿𝙴:__ `{media.mime_type}`\n\n"
+    text += f"📊 __𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴:__ `{humanbytes(media.file_size)}`\n\n"
     if not m.document:
-        text += f"🎞 __Duration:__ `{TimeFormatter(media.duration * 1000)}`\n\n" if media.duration else ""
+        text += f"🎞 __𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽:__ `{TimeFormatter(media.duration * 1000)}`\n\n" if media.duration else ""
         if m.audio:
-            text += f"🎵 __Title:__ `{media.title}`\n\n" if media.title else ""
-            text += f"🎙 __Performer:__ `{media.performer}`\n\n" if media.performer else ""
-    text += f"__✏ Caption:__ `{m.caption}`\n\n"
-    text += "**--Uploader Details:--**\n\n\n"
-    text += f"__🦚 First Name:__ `{m.from_user.first_name}`\n\n"
-    text += f"__🐧 Last Name:__ `{m.from_user.last_name}`\n\n" if m.from_user.last_name else ""
-    text += f"__👁 User Name:__ @{m.from_user.username}\n\n" if m.from_user.username else ""
-    text += f"__👤 User Id:__ `{m.from_user.id}`\n\n"
-    text += f"__💬 DC ID:__ {m.from_user.dc_id}\n\n" if m.from_user.dc_id else ""
+            text += f"🎵 __𝚃𝙸𝚃𝙸𝙻𝙴:__ `{media.title}`\n\n" if media.title else ""
+            text += f"🎙 __𝙿𝙴𝚁𝙵𝙾𝚁𝙼𝙴𝚁:__ `{media.performer}`\n\n" if media.performer else ""
+    text += f"__✏ 𝙲𝙰𝙿𝚃𝙸𝙾𝙽:__ `{m.caption}`\n\n"
+    text += "**--𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n\n"
+    text += f"__🦚 ғɪᴛsᴛ ɴᴀᴍᴇ:__ `{m.from_user.first_name}`\n\n"
+    text += f"__🐧 ʟᴀsᴛ ɴᴀᴍᴇ:__ `{m.from_user.last_name}`\n\n" if m.from_user.last_name else ""
+    text += f"__👁 ᴜsᴇʀɴᴀᴍᴇ:__ @{m.from_user.username}\n\n" if m.from_user.username else ""
+    text += f"__👤 ᴜsᴇʀ ɪᴅ:__ `{m.from_user.id}`\n\n"
+    text += f"__💬 ᴅᴄ ɪᴅ:__ {m.from_user.dc_id}\n\n" if m.from_user.dc_id else ""
 
     # if databacase channel exist forwarding message to channel
     if DB_CHANNEL_ID:
@@ -47,8 +47,8 @@ async def storefile(c, m):
 
     # making buttons
     buttons = [[
-        InlineKeyboardButton(text="Open Url 🔗", url=url),
-        InlineKeyboardButton(text="Share Link 👤", url=share_url)
+        InlineKeyboardButton(text="𝐎𝐏𝐄𝐍 𝐔𝐑𝐋 🔗", url=url),
+        InlineKeyboardButton(text="𝐒𝐇𝐀𝐑𝐄 𝐋𝐈𝐍𝐊 👤", url=share_url)
     ]]
 
     # sending message
@@ -70,22 +70,22 @@ async def storefile_channel(c, m):
        media = m.audio
 
     # text
-    text = "**🗃️ Details:**\n\n\n"
-    text += f"📂 __File Name:__ `{media.file_name}`\n\n"
-    text += f"💽 __Mime Type:__ `{media.mime_type}`\n\n"
-    text += f"📊 __File Size:__ `{humanbytes(media.file_size)}`\n\n"
+    text = "**🗃️ 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:**\n\n\n"
+    text += f"📂 __𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴:__ `{media.file_name}`\n\n"
+    text += f"💽 __𝙼𝙸𝙼𝙴 𝚃𝚈𝙿𝙴:__ `{media.mime_type}`\n\n"
+    text += f"📊 __𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴:__ `{humanbytes(media.file_size)}`\n\n"
     if not m.document:
-        text += f"🎞 __Duration:__ `{TimeFormatter(media.duration * 1000)}`\n\n" if media.duration else ""
+        text += f"🎞 __𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽:__ `{TimeFormatter(media.duration * 1000)}`\n\n" if media.duration else ""
         if m.audio:
-            text += f"🎵 __Title:__ `{media.title}`\n\n" if media.title else ""
-            text += f"🎙 __Performer:__ `{media.performer}`\n\n" if media.performer else ""
-    text += f"__✏ Caption:__ `{m.caption}`\n\n"
-    text += "**Uploader Details:**\n\n\n"
-    text += f"__📢 Channel Name:__ `{m.chat.title}`\n\n"
-    text += f"__🗣 User Name:__ @{m.chat.username}\n\n" if m.chat.username else ""
-    text += f"__👤 Channel Id:__ `{m.chat.id}`\n\n"
-    text += f"__💬 DC ID:__ {m.chat.dc_id}\n\n" if m.chat.dc_id else ""
-    text += f"__👁 Members Count:__ {m.chat.members_count}\n\n" if m.chat.members_count else ""
+            text += f"🎵 __𝚃𝙸𝚃𝙻𝙴:__ `{media.title}`\n\n" if media.title else ""
+            text += f"🎙 __𝙿𝙴𝚁𝙵𝙾𝚁𝙼𝙴𝚁:__ `{media.performer}`\n\n" if media.performer else ""
+    text += f"__✏ 𝙲𝙰𝙿𝚃𝙸𝙾𝙽:__ `{m.caption}`\n\n"
+    text += "**𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:**\n\n\n"
+    text += f"__📢 ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:__ `{m.chat.title}`\n\n"
+    text += f"__🗣 ᴜsᴇʀ ɴᴀᴍᴇ:__ @{m.chat.username}\n\n" if m.chat.username else ""
+    text += f"__👤 ᴄʜᴀɴɴᴇʟ ɪᴅ:__ `{m.chat.id}`\n\n"
+    text += f"__💬 ᴅᴄ ɪᴅ:__ {m.chat.dc_id}\n\n" if m.chat.dc_id else ""
+    text += f"__👁 ᴍᴇᴍʙᴇʀ ᴄᴏᴜɴᴛ:__ {m.chat.members_count}\n\n" if m.chat.members_count else ""
 
     # if databacase channel exist forwarding message to channel
     if DB_CHANNEL_ID:
@@ -100,8 +100,8 @@ async def storefile_channel(c, m):
 
     # making buttons
     buttons = [[
-        InlineKeyboardButton(text="Open Url 🔗", url=url),
-        InlineKeyboardButton(text="Share Link 👤", url=share_url)
+        InlineKeyboardButton(text="𝐎𝐏𝐄𝐍 𝐔𝐑𝐋🔗", url=url),
+        InlineKeyboardButton(text="𝐒𝐇𝐀𝐑𝐄 𝐋𝐈𝐍𝐊👤", url=share_url)
     ]]
 
     # Editing and adding the buttons
