@@ -18,25 +18,30 @@ async def start(c, m, cb=False):
     owner_username = owner.username if owner.username else 'Ns_bot_updates'
 
     # start text
-    text = f"""Hey! {m.from_user.mention(style='md')}
+    text = f"""🤓🤹ʜɪ ʜᴇʟᴏo, {m.from_user.mention(style='md')}
 
-💡 ** I am Telegram File Store Bot**
+💡 ** ɪ ᴀᴍ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ**
 
-`You can store your Telegram Media for permanent Link!`
+Yᴏᴜ ᴄᴀɴ sᴛᴏʀᴇ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ Mᴇᴅɪᴀ ғᴏʀ ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ!
 
+🧬ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ /help....🔭
 
-**👲 Maintained By:** {owner.mention(style='md')}
+🏛️𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝚘𝚠𝚗𝚎𝚍 :- © [𝗨𝗡𝗜 𝗠𝗢𝗩𝗜𝗘𝗦 𝗕𝗢𝗫](url:https://t.me/UNI_MOVIES_BOX).
+
+🔬🧲© ᴄʀᴇᴀᴛᴏʀ : @Deeks_04_8🎩,
+
+°•°•°•°•°•°•°•°•[ 🆄🅼🆁 ]°•°•°•°•°•°•°•°•}
 """
 
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}"),
-            InlineKeyboardButton('Help 💡', callback_data="help")
-        ],
-        [
+            InlineKeyboardButton('🤹𝐜𝐫𝐞𝐚𝐭𝐞𝐫/𝐦𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐫🤴', url=f"https://t.me/{owner_username}")],
+            [InlineKeyboardButton('Help 💡', callback_data="help")
+        ,
+        
             InlineKeyboardButton('About 📕', callback_data="about")
-        ]
+        ],[InlineKeyboardButton('🎪𝐉𝐎𝐈𝐍 𝐎𝐔𝐑𝐒 𝐀𝐋𝐋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒🎪', url=f"https://t.me/UNI_MOVIES_BOX")
     ]
 
     # when button home is pressed
@@ -58,21 +63,21 @@ async def start(c, m, cb=False):
 
         if chat_id.startswith('-100'): #if file from channel
             channel = await c.get_chat(int(chat_id))
-            caption += "**--Uploader Details:--**\n\n"
-            caption += f"__📢 Channel Name:__ `{channel.title}`\n\n"
-            caption += f"__🗣 User Name:__ @{channel.username}\n\n" if channel.username else ""
-            caption += f"__👤 Channel Id:__ `{channel.id}`\n\n"
-            caption += f"__💬 DC ID:__ {channel.dc_id}\n\n" if channel.dc_id else ""
-            caption += f"__👁 Members Count:__ {channel.members_count}\n\n" if channel.members_count else ""
+            caption += "**--𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n"
+            caption += f"__🎪 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙽𝙰𝙼𝙴:__ `{channel.title}`\n\n"
+            caption += f"__🕵️ 𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴:__ @{channel.username}\n\n" if channel.username else ""
+            caption += f"__🆔 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙸𝙳:__ `{channel.id}`\n\n"
+            caption += f"__💬 𝙳𝙲 𝙸𝙳:__ {channel.dc_id}\n\n" if channel.dc_id else ""
+            caption += f"__💠 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 𝙲𝙾𝚄𝙽𝚃:__ {channel.members_count}\n\n" if channel.members_count else ""
 
         else: #if file not from channel
             user = await c.get_users(int(chat_id))
-            caption += "\n\n\n**--Uploader Details:--**\n\n"
-            caption += f"__🦚 First Name:__ `{user.first_name}`\n\n"
-            caption += f"__🐧 Last Name:__ `{user.last_name}`\n\n" if user.last_name else ""
-            caption += f"__👁 User Name:__ @{user.username}\n\n" if user.username else ""
-            caption += f"__👤 User Id:__ `{user.id}`\n\n"
-            caption += f"__💬 DC ID:__ {user.dc_id}\n\n" if user.dc_id else ""
+            caption += "\n\n\n**--𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:--**\n\n"
+            caption += f"__🤹 𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴:__ `{user.first_name}`\n\n"
+            caption += f"__🙄 𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴:__ `{user.last_name}`\n\n" if user.last_name else ""
+            caption += f"__♨️ 𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴:__ @{user.username}\n\n" if user.username else ""
+            caption += f"__💺 𝚄𝚂𝙴𝚁 𝙸𝙳:__ `{user.id}`\n\n"
+            caption += f"__💬 𝙳𝙲 𝙸𝙳:__ {user.dc_id}\n\n" if user.dc_id else ""
 
         await msg.copy(m.from_user.id, caption=caption)
 
@@ -88,15 +93,15 @@ async def start(c, m, cb=False):
 @Client.on_message(filters.command('me') & filters.incoming & filters.private)
 async def me(c, m):
     me = await c.get_users(m.from_user.id)
-    text = "--**YOUR DETAILS:**--\n\n\n"
-    text += f"__🦚 First Name:__ `{me.first_name}`\n\n"
-    text += f"__🐧 Last Name:__ `{me.last_name}`\n\n" if me.last_name else ""
-    text += f"__👁 User Name:__ @{me.username}\n\n" if me.username else ""
-    text += f"__👤 User Id:__ `{me.id}`\n\n"
-    text += f"__💬 DC ID:__ {me.dc_id}\n\n" if me.dc_id else ""
-    text += f"__✔ Is Verified By TELEGRAM:__ `{me.is_verified}`\n\n" if me.is_verified else ""
-    text += f"__👺 Is Fake:__ {me.is_fake}\n\n" if me.is_fake else ""
-    text += f"__💨 Is Scam:__ {me.is_scam}\n\n" if me.is_scam else ""
-    text += f"__📃 Language Code:__ {me.language_code}\n\n" if me.language_code else ""
+    text = "--**𝐘𝐎𝐔𝐑𝐒 𝐃𝐄𝐓𝐀𝐈𝐋𝐒:**--\n\n\n"
+    text += f"__🦚 𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴:__ `{me.first_name}`\n\n"
+    text += f"__🐧 𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴:__ `{me.last_name}`\n\n" if me.last_name else ""
+    text += f"__👁 𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴:__ @{me.username}\n\n" if me.username else ""
+    text += f"__👤 𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴:__ `{me.id}`\n\n"
+    text += f"__💬 𝙳𝙲 𝙸𝙳:__ {me.dc_id}\n\n" if me.dc_id else ""
+    text += f"__✔ ɪs ᴠᴇʀɪғɪᴇᴅ ᴀs ᴛᴇʟᴇɢʀᴀᴍᴇ:__ `{me.is_verified}`\n\n" if me.is_verified else ""
+    text += f"__👺 𝙸𝚂 𝙵𝙰𝙺𝙴:__ {me.is_fake}\n\n" if me.is_fake else ""
+    text += f"__💨 𝙸𝚂 𝚂𝙲𝙰𝙼:__ {me.is_scam}\n\n" if me.is_scam else ""
+    text += f"__📃 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 𝙲𝙾𝙳𝙴:__ {me.language_code}\n\n" if me.language_code else ""
 
     await m.reply_text(text, quote=True)
