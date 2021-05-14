@@ -18,23 +18,23 @@
     },
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
-      "value": ""
+      "value": "1687590985:AAHHZ1OggQwWbFV_mEghKW0oPJiFPzKVisY"
     },
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "2980496"
     },
     "DB_CHANNEL_ID": {
       "description": "give me the telegram channel ID here (better this should be private channel)",
-      "value": ""
+      "value": "-1001475757325"
     },
     "OWNER_ID": {
       "description": "give your telegram user id here",
-      "value": ""
+      "value": "1086432320"
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "9415a61fedcc0f00f33667ca46e577a3"
     }
   },
   "addons": [
