@@ -17,23 +17,27 @@ async def help_cb(c, m):
     await m.answer()
 
     # help text
-    help_text = """**You need Help?? 🧐**
+    help_text = """💡🅱🅾🆃🆂 🅷🅴🅻🅿 :-
 
-★ Just send me the files i will store file and give you share able link
+👾 Jᴜsᴛ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ғɪʟᴇs ɪ ᴡɪʟʟ sᴛᴏʀᴇ ғɪʟᴇ ᴀɴᴅ ɢɪᴠᴇ ʏᴏᴜ sʜᴀʀᴇ ᴀʙʟᴇ ʟɪɴᴋ.
 
+[ΝϴͲᎬ :- 𝗬𝗼𝘂 𝗰𝗮𝗻 𝘂𝘀𝗲 𝗺𝗲 𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 𝘁𝗼𝗼]✓🥳
 
-**You can use me in channel too 😉**
+🧭 Mᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ᴇᴅɪᴛ ᴘᴇʀᴍɪssɪᴏɴ.🎨
+°~° Tʜᴀᴛs ᴇɴᴏᴜɢʜ ɴᴏᴡ ᴄᴏɴᴛɪɴᴜᴇ ᴜᴘʟᴏᴀᴅɪɴɢ ғɪʟᴇs ɪɴ ᴄʜᴀɴɴᴇʟ ɪ ᴡɪʟʟ ᴇᴅɪᴛ ᴀʟʟ ᴘᴏsᴛs ᴀɴᴅ ᴀᴅᴅ sʜᴀʀᴇ ᴀʙʟᴇ ʟɪɴᴋ ᴜʀʟ ʙᴜᴛᴛᴏɴs.🤹
 
-★ Make me admin in your channel with edit permission. Thats enough now continue uploading files in channel i will edit all posts and add share able link url buttons"""
+© [ᴜɴɪ ᴍᴏᴠɪᴇs ʙᴏx](https://t.me/UNI_MOVIES_BOX).
+
+•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•"""
 
     # creating buttons
     buttons = [
         [
-            InlineKeyboardButton('Home 🏕', callback_data='home'),
-            InlineKeyboardButton('About 📕', callback_data='about')
+            InlineKeyboardButton('𝙶𝙾 𝙷𝙾𝙼𝙴 🏕', callback_data='home'),
+            InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃 𝙱𝙾𝚃 📕', callback_data='about')
         ],
         [
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('𝙲𝙻𝙾𝚂𝙴 𝙰𝙻𝙻 🔐', callback_data='close')
         ]
     ]
 
@@ -57,31 +61,33 @@ async def about_cb(c, m):
     bot = await c.get_me()
 
     # about text
-    about_text = f"""--**My Details:**--
+    about_text = f"""🤴 𝐀𝐁𝐎𝐔𝐓 𝐁𝐎𝐓:~~
 
 🤖 𝐌𝐲 𝐍𝐚𝐦𝐞: {bot.mention(style='md')}
     
-📝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞: [Python 3](https://www.python.org/)
+📝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞: [ᴘʏᴛʜᴀɴ 3](https://www.python.org/)
 
-🧰 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤: [Pyrogram](https://github.com/pyrogram/pyrogram)
+🧰 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤: [ᴘʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
 
-👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: {owner.mention(style='md')}
+👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: [𝙳𝙴𝙴𝙺𝚂𝙷𝙸𝚃𝙷](https://t.me/Deeks_04_8)
 
-📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [NS BOT UPDATES](https://t.me/Ns_bot_updates)
+📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [ᴜᴍʀ ᴋᴀɴɴᴀᴅᴀ ᴍᴏᴠɪᴇs](https://t.me/UMR_KAN_MOVIES)
 
-👥 𝐆𝐫𝐨𝐮𝐩: [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
+👥 𝐆𝐫𝐨𝐮𝐩: [ᴜɴɪᴠᴇʀsᴀʟ ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛs](https://t.me/UM_Requests)
 
-🌐𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞: [Press Me 🥰](https://github.com/Ns-Bots/TG-File-Store)
+© [𝚄𝙽𝙸 𝙼𝙾𝚅𝙸𝙴𝚂 𝙱𝙾𝚇](https://t.me/UNI_MOVIES_BOX)
+
+•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•
 """
 
     # creating buttons
     buttons = [
         [
-            InlineKeyboardButton('Home 🏕', callback_data='home'),
-            InlineKeyboardButton('Help 💡', callback_data='help')
+            InlineKeyboardButton('𝙶𝙾 𝙷𝙾𝙼𝙴 🏕', callback_data='home'),
+            InlineKeyboardButton('𝙷𝙴𝙻𝙿 💡', callback_data='help')
         ],
         [
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('𝙲𝙻𝙾𝚂𝙴 𝙰𝙻𝙻 🔐', callback_data='close')
         ]
     ]
 
